@@ -1,0 +1,45 @@
+.body
+{
+	background: #1b1b1b;
+}
+
+
+.infoText2
+{
+	font-size: 30px;
+	font-weight: 100;
+	color: #eeb6fe;
+	margin-top: 20px;
+	font-family: "montserrat";
+}
+
+.sections
+{
+	font-size: 30px;
+	font-weight: 100;
+	color: #eeb6fe;
+	font-family: "montserrat";
+}
+
+.footer
+{
+	margin-top: 35px;
+}
+.prototipImg
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.foot 
+{
+	margin-top: 30px;
+}

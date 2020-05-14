@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Как сделать первую игру</title>
+	<link rel="stylesheet" type="text/css" href="css/Main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/Engine.css">>
+</head>
+<body class="body">
+	<div class="section1">
+		<div class="container">
+			<div class="row header">
+				<div class="col-lg-6 col-md-2">
+					<div class="logo text-left">
+					<p class="logoText">sGames</p>
+					</div>
+				</div>
+				<div class="col-lg-6 text-right">
+					<a class="linkStep" href="index.html"><button class="btn btn-outline-light btn-lg">Home</button></a>
+					<a class="linkStep" href="Start.html"><button class="btn btn-outline-light btn-lg">Unity</button></a>
+					<a class="linkStep" href="Scripting.html"><button class="btn btn-outline-light btn-lg">Scripting</button></a>
+				</div>
+			</div>
+			<div class="enginesLogo">
+				<div class="col-lg-12 text-center">
+					<p class="infoText">Игровой движок</p>
+				</div>
+				<div class ="row text-center">
+					<div class="col-lg-4">
+						<img src="img/unityLogo.png">
+					</div>
+					<div class="col-lg-4">
+						<img src="img/unrealLogo (2).png">
+					</div>
+					<div class="col-lg-4">
+						<img src="img/cryEngineLogo.png">
+					</div>
+				</div>
+			</div>
+			<div class="row info">
+				<div class="col-lg-12 text-center">
+					<p class="infoText2">Что такое игровой движок ? <br> 
+						Игровой движок - это набор готового программного кода (физика, свет, готовые классы), чаще всего с интерфейсом.<br>
+						Их выбор очень велик, но мы поговорим про самые популярные.
+					</p>
+				</div>
+			</div>
+			<div class="row engines">
+				<div class="col-lg-12 text-center">
+					<p class="infoText">Unity</p>
+					<img src="img/unityEngine.png" class="engineImg">
+					<p class="infoText3">Unity - один из самых популярных движков на сегодня.<br>
+					Платформы: мобильные устройства, ПК, Mac, Linux, консоли, Facebook, WebGl, VR и другие.
+					</p>
+					<p class="infoText3">В Unity можно спокойно разрабатывать как 2D, так и 3D-проекты. В Asset Store есть много готовых платных и бесплатных решений: модели, текстуры, анимации и полноценные проекты. Например, шутер про зомби. Очень много обучающих материалов как от самих Unity, так и от энтузиастов на YouTube (подробнее расскажем в следующем материале цикла).</p>
+					<p class="infoText3">
+						Язык программирования: C #, по сравнению c С++ у него меньше возможностей выстрелить себе в колено, в частности, это касается работы с памятью. Также поддерживается JavaScript, который на самом деле UnityScript. Если писать код совсем лень или нет навыков, есть плагины, которые позволяют делать игры без написания кода, например, Playmaker. Правда, за него придется выложить 45 долларов.		
+					</p>
+				</div>
+			</div>
+			<div class="row engines">
+				<div class="col-lg-12 text-center">
+					<p class="infoText">Unreal engine</p>
+					<img src="img/unrealEngine.jpg" class="engineImg">
+					<p class="infoText3">Очень продвинутый движок, сообщество которого в последнее время быстро растет, чему способствует компания-разработчик Epic Games. По Unreal Engine проводятся митапы, стримы, а в этом году прошла первая конференция, посвященная разработке на Unreal.<br>
+					Платформы: движок в первую очередь для тех, кто хочет делать проекты с крутой графикой на ПК и консолях. Для мобильных устройств тоже подходит, но пока популярных мобильных игр на Unreal Engine немного: Fortnite и PUBG. Ещё на нём сделаны серия Infinity Blade, Batman: Arkham Knight и Life is Strange.
+					</p>
+					<p class="infoText3">Язык разработки: C++. Кого-то это может отпугнуть, но есть решение — блюпринты. С их помощью теоретически можно разработать игру, не написав ни строчки кода. На практике — это очень полезно для быстрой разработки прототипов. Также есть магазин ассетов Unreal Engine Marketplace, где можно скачать готовые модели, звуки и полноценные проекты.
+					Злые языки говорят, что Unreal Engine превосходит Unity по графике. На самом деле это просто разные движки. Хотя частицы и пост-эффекты в Unreal Engine по умолчанию всё же красивее.
+					</p>
+				</div>
+			</div>
+			<div class="row engines">
+				<div class="col-lg-12 text-center">
+					<p class="infoText">CryEngine</p>
+					<img src="img/cryEngine.jpeg">
+					<p class="infoText3">
+						Стал известным после выхода Crysis — прорывной для своего времени игры. На нём вышло очень много крутых больших игр: первый Far Cry, MechWarrior Online, Sniper: Ghost Warrior 3, Armored Warfare, Homefront: The Revolution, Prey 2017-го года.
+					</p>
+					<p class="infoText3">
+						Платформы: ПК, консоли и VR. Официальной поддержки мобильных устройств нет, но по слухам разрабатывать можно.
+
+						Код движка можно модифицировать, что приносит как радость, так и боль. Я сам работал с CryEngine 2 — много модифицировали движок, исправляли баги, а когда попытались перейти на CryEngine 3 — потратили месяц и в итоге вернулись на предыдущую версию, так и не справившись с некоторыми проблемами.
+					</p>
+					<p class="infoText3">
+						Язык разработки: C++. Совсем недавно появился Marketplace с ассетами.
+					</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="infoText text-center">Выбираем</p>
+					<p class="infoText2 text-center"> Мы выбрали Unity так как этот движок среди всех игровых считается самым успешным. Им пользуются и крупные студии, и разработчики одиночки. Он прост в освоении и хорошо подходит для не опытных разработчиков.</p>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a class="linkStep" href="Start.html"><button class="btnStep btn btn-outline-light btn-lg">Приступаем</button></a>
+				</div>
+				<div class="col-lg-12 text-center footer">
+					<p>designed Svechin Games</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

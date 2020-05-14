@@ -1,0 +1,60 @@
+.body
+{
+	background: #232323;
+}
+
+
+
+.infoText3
+{
+	font-size: 25px;
+	font-weight: 100;
+	color: #eeb6fe;
+	margin-top: 10px;
+	font-family: "montserrat";
+}
+
+
+.engines
+{
+	margin-top: 40px;
+}
+
+
+.engines img
+{
+
+	display: inline-block;
+	max-width: 75%;
+	height: auto;
+	padding-bottom: 30px
+}
+
+.info img
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.enginesLogo img
+{
+	text-align: center;
+	width: 60%;
+	height: auto;
+}
+
+.enginesLogo
+{
+	padding-top: 50px;
+}
+.footer
+{
+	margin-top: 35px;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

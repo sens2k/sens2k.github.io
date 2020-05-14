@@ -1,0 +1,63 @@
+.body
+{
+	background: #1b1b1b;
+}
+
+.footer
+{
+	margin-top: 60px;
+}
+.info img
+{
+	max-width: 40%;
+	height: auto;
+}
+.attention
+{
+	margin-bottom: 100px;
+}
+
+.tutor
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tutorTextHeader
+{
+	margin-bottom:10px;
+	font-size: 30px;
+	font-weight: 100;
+	color: #eeb6fe;
+	font-family: "montserrat";
+	border-bottom: solid #eeb6fe 2px;
+	display: inline-block;
+}
+
+.tutorImg
+{
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+
+.tutorText
+{
+	font-size: 22px;
+	font-weight: 100;
+	color: #f8f9fa;
+	margin-top: 30px;
+	font-family: "montserrat";
+	display: inline-block;
+}
+.scriptingLink
+{
+	color: #eeb6fe;
+	border-bottom: solid #eeb6fe 2px;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

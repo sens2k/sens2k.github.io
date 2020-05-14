@@ -1,0 +1,73 @@
+.logo
+{
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Montserrat";
+  color: white;
+  border-bottom: solid #eeb6fe 1px;
+}
+
+.section1
+{
+	padding: 30px;
+}
+.btnStep
+{
+	margin-top: 40px;
+}
+.linkStep
+{
+	color: #f8f9fa;
+}
+.linkStep:hover
+{
+	color: black;
+	text-decoration: none;
+}
+
+.info
+{
+	margin-top: 50px;
+}
+
+
+.infoText
+{
+	font-size: 40px;
+	font-weight: 100;
+	color: #f8f9fa;
+	padding: 30px;
+	font-family: "montserrat";
+}
+.infoText2
+{
+	font-size: 30px;
+	font-weight: 100;
+	color: #eeb6fe;
+	margin-top: 10px;
+	font-family: "montserrat";
+}
+
+.footer {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "montserrat";
+  color: #f8f9fa;
+}
+.footer p {
+  display: inline-block;
+  border-bottom: solid #eeb6fe 2px;
+}
+
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,0 +1,46 @@
+.body
+{
+	background: #232323;
+}
+.endImg 
+{
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+.endText
+{
+	font-size: 22px;
+	font-weight: 100;
+	color: #f8f9fa;
+	margin-top: 30px;
+	font-family: "montserrat";
+	display: inline-block;
+}
+
+.endRow
+{
+	margin-top: 20px;
+}
+
+.footer
+{
+	margin-top: 50px ;
+}
+
+.TutorImg
+{
+	text-align: center;
+	width: 60%;
+	height: auto;
+}
+.final
+{
+	margin-top: 100px;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

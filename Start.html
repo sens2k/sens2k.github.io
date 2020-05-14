@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Как сделать первую игру</title>
+	<link rel="stylesheet" type="text/css" href="css/Main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/Start.css">
+</head>
+<body class="body">
+	<div class="section1">
+		<div class="container">
+			<div class="row header">
+				<div class="col-lg-6 col-md-2">
+					<div class="logo text-left">
+					<p class="logoText">sGames</p>
+					</div>
+				</div>
+				<div class="col-lg-6 text-right">
+					<a class="linkStep" href="index.html"><button class="btn btn-outline-light btn-lg">Home</button></a>
+					<a class="linkStep" href="Start.html"><button class="btn btn-outline-light btn-lg">Unity</button></a>
+					<a class="linkStep" href="Scripting.html"><button class="btn btn-outline-light btn-lg">Scripting</button></a>
+				</div>
+			</div>
+			<div class="row info">
+				<div class="col-lg-12 text-center">
+					<p class="infoText">Работа с Unity</p>
+					<p class="tutorText attention">В этом части вам понадобятся скрипты, ознакомиться с ними вы можете в разделе <a href="Scripting.html" class="scriptingLink">Scripting</a> </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Запустим Unity и создадим проект</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/create.png" class="tutorImg">
+				</div>
+				<div class="col-lg-5 text-left">
+					<p class="tutorText">Выбираем 2D проект<br> Даем название<br> Указываем папку для сохранения </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Добавляем нужные папки</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-5 text-right">
+					<p class="tutorText">В assets создаем 5 папок<br><br>
+						Animation - для анимаций<br>
+						Prefabs - для префабов<br>
+						Scripts - для C# скриптов<br>
+						Sprites - для картинок<br>
+						Textures - для текстур
+					</p>
+				</div>
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/Floders.png" class="tutorImg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Создаем игрока </p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/player.png" class="tutorImg">
+				</div>
+				<div class="col-lg-5 text-left">
+					<p class="tutorText">
+						Из папки Sprite переносим на сцену за ранее созданный рисунок<br><br>
+						Даем название Player <br>
+						Добавляем компоненты:<br><br> RigidBody2D (физика) <br>
+						Polygon Collider 2D (границы объекта) <br>
+					 	Fly Player (скрип для игрока <a href="Scripting.html" class="scriptingLink">Scripting</a>)
+					 </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Создаем врага</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-5 text-right">
+					<p class="tutorText">
+						В папке texture создаем Sprite Square и переносим его на сцену<br><br>
+						Даем название FlyEnemy <br>
+						Добавляем компоненты RigidBody2D (физика) <br>
+						Box Collider 2D (границы объекта) <br>
+					 	Fly Enemy (скрип для игрока <a href="Scripting.html" class="scriptingLink">Scripting</a>)<br><br>
+					 	После чего перносм объект со сцены в папку Prefabs, чтобы создавать его копии в дальнейшем
+					</p>
+				</div>
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/enemy.png" class="tutorImg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Добавляем вспомогательный элементы</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/Elements.png" class="tutorImg">
+				</div>
+				<div class="col-lg-5 text-left">
+					<p class="tutorText">
+						В сцене создаем два объкта: Spawner и GameManager<br><br>
+						К Spawner добавляем скрипт FlySpawner (<a href="Scripting.html" class="scriptingLink">Scripting</a>), после чего в поле meteor переносим наш префаб Enemy<br><br>
+						К GameManager добавляем скрипт ScoreaManager (<a href="Scripting.html" class="scriptingLink">Scripting</a>) <br><br>
+					 </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Добавляем Canvas</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-5 text-right">
+					<p class="tutorText">
+						На сцене создаем элемент Ui - Text<br><br>
+						Добавляем скрипт UiManager к элементу Canvas (<a href="Scripting.html" class="scriptingLink">Scripting</a>), после чего в поле text переносим наш элемент текста.<br><br>
+						В инспекторе в поле Render Mode выставляем Screen - Space - Camera, и переносим туда нашу камеру.
+					</p>
+				</div>
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/Ui.png" class="tutorImg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center"> 
+					<p class="tutorTextHeader">Настраиваем text</p>
+				</div>
+			</div>
+			<div class= "row tutor" >
+				<div class="col-lg-7 text-left">
+					<img src="img/tutor/Text.png" class="tutorImg">
+				</div>
+				<div class="col-lg-5 text-left">
+					<p class="tutorText">
+						В инспекторе настраиваем цвет, шрифт, размер<br><br>
+						Выравниваем его по экрану
+					 </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a class="linkStep" href="End.html"><button class="btnStep btn btn-outline-light btn-lg">Осталось немного</button></a>
+				</div>
+				<div class="col-lg-12 text-center footer">
+					<p>designed Svechin Games</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
